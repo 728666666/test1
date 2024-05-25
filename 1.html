@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>简易网页入口</title>
+    <style>
+        /* 设置按钮样式 */
+        .entry-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            margin-right: 10px; /* 添加右边距 */
+        }
+        .entry-button:hover {
+            background-color: #0056b3;
+        }
+        .entry-button:last-child {
+            margin-right: 0; /* 最后一个按钮不需要右边距 */
+        }
+
+        /* 设置 body 的样式以使用 Flexbox 布局 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 使用视口高度来确保按钮垂直居中 */
+            margin: 0; /* 移除默认的 margin */
+        }
+    </style>
+</head>
+<body>
+    <!-- 进入按钮 -->
+    <button class="entry-button" onclick="openWebPage('https://www.knvod.com/')">柯南电影</button>
+    <button class="entry-button" onclick="openWebPage('https://zhuiyingmao5.com')">追影猫</button>
+
+    <script>
+        // 打开新网页的函数
+        function openWebPage(url) {
+            window.open(url);
+        }
+    </script>
+</body>
+</html>
